@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SitesDwnl</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-wrapper">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <a class="header__logo logo" href="#">
+                            <img class="logo-img" src="images/logo.svg" alt="logo">
+                        </a>
+                        <form class="header__search search" action="#">
+                            <input class="search__input" type="text" placeholder="Search here...">
+                            <button class="search__button" type="submit">
+                                <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.9168 12.6434L9.35902 10.081L11.9168 12.6434ZM10.7765 6.65655C10.7765 7.94192 10.2659 9.17464 9.35697 10.0835C8.44808 10.9924 7.21536 11.503 5.92999 11.503C4.64462 11.503 3.41189 10.9924 2.503 10.0835C1.59411 9.17464 1.0835 7.94192 1.0835 6.65655C1.0835 5.37118 1.59411 4.13846 2.503 3.22956C3.41189 2.32067 4.64462 1.81006 5.92999 1.81006C7.21536 1.81006 8.44808 2.32067 9.35697 3.22956C10.2659 4.13846 10.7765 5.37118 10.7765 6.65655V6.65655Z"
+                                        stroke="#D2D2D2" stroke-width="1.14035" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                        <div class="header__user-nav user-nav">
+                            <a class="user-nav__notifications" href="#">
+                                <svg width="15" height="18" viewBox="0 0 15 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.778 12.4699L13.141 9.44773V6.30107C13.141 3.15937 10.585 0.603394 7.44333 0.603394C4.30162 0.603394 1.74565 3.15937 1.74565 6.30107V9.44773L0.108618 12.4699C0.0343797 12.6069 -0.00298452 12.7609 0.000186238 12.9167C0.00335699 13.0725 0.0469539 13.2248 0.126705 13.3587C0.206456 13.4926 0.319626 13.6035 0.455125 13.6805C0.590625 13.7575 0.743805 13.798 0.899658 13.798H4.1584C4.14931 13.8977 4.14472 13.9978 4.14464 14.0979C4.14464 14.9728 4.49217 15.8118 5.11079 16.4304C5.72941 17.049 6.56844 17.3966 7.4433 17.3966C8.31815 17.3966 9.15718 17.049 9.7758 16.4304C10.3944 15.8118 10.742 14.9728 10.742 14.0979C10.742 13.9967 10.7371 13.8968 10.7282 13.798H13.9869C14.1428 13.798 14.2959 13.7575 14.4314 13.6805C14.5669 13.6035 14.68 13.4926 14.7598 13.3587C14.8395 13.2248 14.8831 13.0725 14.8863 12.9167C14.8894 12.7609 14.8522 12.6069 14.778 12.4699ZM9.54248 14.0979C9.54271 14.3864 9.48349 14.6718 9.3685 14.9364C9.25351 15.2009 9.08522 15.439 8.87414 15.6356C8.66306 15.8322 8.41372 15.9832 8.14168 16.0792C7.86964 16.1752 7.58073 16.214 7.293 16.1934C7.00527 16.1727 6.72488 16.093 6.46934 15.9591C6.2138 15.8253 5.98859 15.6402 5.80777 15.4154C5.62694 15.1906 5.49439 14.931 5.41838 14.6527C5.34236 14.3745 5.32452 14.0835 5.36597 13.798H9.52066C9.53508 13.8973 9.54237 13.9976 9.54248 14.0979ZM1.40312 12.5985L2.94516 9.75173V6.30107C2.94516 5.10809 3.41908 3.96396 4.26265 3.12039C5.10622 2.27682 6.25035 1.80291 7.44333 1.80291C8.63632 1.80291 9.78045 2.27682 10.624 3.12039C11.4676 3.96396 11.9415 5.10809 11.9415 6.30107V9.75173L13.4835 12.5985H1.40312Z"
+                                        fill="white" />
+                                </svg>
+                                <span>
+
+                                </span>
+                            </a>
+                            <div class="user-nav__profile profile">
+                                <div class="profile__top">
+                                    <p class="profile__top-text">
+                                        anna07
+                                    </p>
+                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9999 0.995935C12.0004 1.12398 11.9721 1.25049 11.9172 1.36617C11.8624 1.48186 11.7823 1.58378 11.6828 1.66444L6.54046 5.80405C6.3871 5.93011 6.19474 5.99902 5.99622 5.99902C5.7977 5.99902 5.60534 5.93011 5.45199 5.80405L0.309616 1.51874C0.134589 1.37327 0.0245216 1.16422 0.00362666 0.93759C-0.0172683 0.71096 0.052721 0.485312 0.198197 0.310285C0.343674 0.135259 0.552721 0.0251918 0.779351 0.00429678C1.00598 -0.0165982 1.23163 0.0533905 1.40665 0.198867L6.00051 4.02993L10.5944 0.327427C10.7202 0.222623 10.8734 0.156049 11.0358 0.135582C11.1983 0.115116 11.3632 0.141614 11.5111 0.211941C11.6589 0.282268 11.7835 0.39348 11.8702 0.532419C11.9568 0.671357 12.0019 0.832207 11.9999 0.995935Z"
+                                            fill="white" />
+                                    </svg>
+                                </div>
+                                <div class="profile__inner">
+                                    <a class="profile__link" href="#">
+                                        anna08
+                                    </a>
+                                    <a class="profile__link" href="#">
+                                        anna09
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="wrapper">
+                <aside class="aside">
+                    <nav class="aside__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__list-item">
+                                <a class="menu__list-link" href="#">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g style="mix-blend-mode:darken">
+                                            <rect y="0.5" width="14" height="14" fill="#87888C" />
+                                        </g>
+                                        <path
+                                            d="M2.2 6.83333V12.1667H4.6V6.83333H2.2ZM5.8 2.83333V12.1667H8.2V2.83333H5.8ZM9.4 8.16667V12.1667H11.8V8.16667H9.4ZM11.8 13.5H2.2C1.87 13.5 1.5876 13.3696 1.3528 13.1087C1.1176 12.8473 1 12.5333 1 12.1667V6.83333C1 6.46667 1.1176 6.15267 1.3528 5.89133C1.5876 5.63044 1.87 5.5 2.2 5.5H4.6V2.83333C4.6 2.46667 4.7176 2.15267 4.9528 1.89133C5.1876 1.63044 5.47 1.5 5.8 1.5H8.2C8.53 1.5 8.8126 1.63044 9.0478 1.89133C9.2826 2.15267 9.4 2.46667 9.4 2.83333V6.83333H11.8C12.13 6.83333 12.4126 6.96378 12.6478 7.22467C12.8826 7.486 13 7.8 13 8.16667V12.1667C13 12.5333 12.8826 12.8473 12.6478 13.1087C12.4126 13.3696 12.13 13.5 11.8 13.5Z"
+                                            fill="#87888C" />
+                                    </svg>
+                                    <span>
+                                        Статистика
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="menu__list-item menu__list-item--active">
+                                <div class="menu__list-link">
+                                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.2852 13.5C4.29282 13.1917 3.39405 12.6214 2.6764 11.8446C2.9073 11.5597 3.05124 11.2095 3.0898 10.839C3.12835 10.4685 3.05977 10.0945 2.89283 9.76474C2.72589 9.43501 2.46819 9.1646 2.15269 8.98811C1.83719 8.81162 1.47825 8.73709 1.1218 8.77403C1.0406 8.36021 0.999789 7.9389 1 7.51654C1 6.86423 1.096 6.23502 1.2748 5.64388H1.3C1.60593 5.64398 1.90683 5.56297 2.1743 5.40847C2.44177 5.25398 2.66698 5.03112 2.82866 4.76092C2.99034 4.49073 3.08316 4.18212 3.09836 3.86423C3.11355 3.54635 3.05062 3.22968 2.9155 2.94413C3.61888 2.26274 4.46952 1.76742 5.3956 1.5C5.54631 1.80787 5.77595 2.06635 6.05911 2.24686C6.34227 2.42737 6.66791 2.52287 7 2.52278C7.33209 2.52287 7.65773 2.42737 7.94089 2.24686C8.22405 2.06635 8.45369 1.80787 8.6044 1.5C9.53048 1.76742 10.3811 2.26274 11.0845 2.94413C10.9484 3.23168 10.8855 3.55076 10.9019 3.87083C10.9182 4.19091 11.0133 4.50125 11.1779 4.77217C11.3426 5.04308 11.5713 5.2655 11.8422 5.41813C12.1131 5.57076 12.4171 5.64849 12.7252 5.64388C12.9079 6.24991 13.0006 6.88141 13 7.51654C13 7.94725 12.958 8.36798 12.8782 8.77403C12.5217 8.73709 12.1628 8.81162 11.8473 8.98811C11.5318 9.1646 11.2741 9.43501 11.1072 9.76474C10.9402 10.0945 10.8716 10.4685 10.9102 10.839C10.9488 11.2095 11.0927 11.5597 11.3236 11.8446C10.6059 12.6214 9.70718 13.1917 8.7148 13.5C8.59826 13.1221 8.36941 12.7925 8.06123 12.5587C7.75304 12.3248 7.38145 12.1988 7 12.1988C6.61855 12.1988 6.24695 12.3248 5.93877 12.5587C5.63059 12.7925 5.40173 13.1221 5.2852 13.5Z"
+                                            stroke="#87888C" stroke-width="1.2" stroke-linejoin="round" />
+                                        <path
+                                            d="M7.00039 9.70084C7.27617 9.70084 7.54924 9.64433 7.80402 9.53453C8.05881 9.42474 8.29031 9.26381 8.48531 9.06093C8.68032 8.85806 8.835 8.61721 8.94054 8.35214C9.04607 8.08707 9.10039 7.80298 9.10039 7.51607C9.10039 7.22916 9.04607 6.94506 8.94054 6.67999C8.835 6.41492 8.68032 6.17408 8.48531 5.9712C8.29031 5.76833 8.05881 5.6074 7.80402 5.4976C7.54924 5.38781 7.27617 5.3313 7.00039 5.3313C6.44344 5.3313 5.90929 5.56148 5.51547 5.9712C5.12164 6.38093 4.90039 6.93663 4.90039 7.51607C4.90039 8.0955 5.12164 8.65121 5.51547 9.06093C5.90929 9.47066 6.44344 9.70084 7.00039 9.70084V9.70084Z"
+                                            stroke="#87888C" stroke-width="1.2" stroke-linejoin="round" />
+                                    </svg>
+                                    <span>
+                                        Утилиты
+                                    </span>
+                                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.9999 0.995935C12.0004 1.12398 11.9721 1.25049 11.9172 1.36617C11.8624 1.48186 11.7823 1.58378 11.6828 1.66444L6.54046 5.80405C6.3871 5.93011 6.19474 5.99902 5.99622 5.99902C5.7977 5.99902 5.60534 5.93011 5.45199 5.80405L0.309616 1.51874C0.134589 1.37327 0.0245216 1.16422 0.00362666 0.93759C-0.0172683 0.71096 0.052721 0.485312 0.198197 0.310285C0.343674 0.135259 0.552721 0.0251918 0.779351 0.00429678C1.00598 -0.0165982 1.23163 0.0533905 1.40665 0.198867L6.00051 4.02993L10.5944 0.327427C10.7202 0.222623 10.8734 0.156049 11.0358 0.135582C11.1983 0.115116 11.3632 0.141614 11.5111 0.211941C11.6589 0.282268 11.7835 0.39348 11.8702 0.532419C11.9568 0.671357 12.0019 0.832207 11.9999 0.995935Z"
+                                            fill="#171821" />
+                                    </svg>
+                                </div>
+                                <ul class="menu__sublist">
+                                    <li class="menu__sublist-item menu__sublist-item--active">
+                                        <a class="menu__sublist-link" href="#">
+                                            Download manager
+                                        </a>
+                                    </li>
+                                    <li class="menu__sublist-item">
+                                        <a class="menu__sublist-link" href="#">
+                                            Download manager
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                <div class="main">
+                    <div class="container">
+                        <h1 class="main__title title">
+                            Download manager
+                        </h1>
+                        <section class="main__manager manager">
+                            <div class="manager__top manager-top">
+                                <h3 class="manager-top__title">
+                                    Информация
+                                </h3>
+                                <form class="manager__search search" action="#">
+                                    <input class="search__input" type="text" placeholder="Search here...">
+                                    <button class="search__button" type="submit">
+                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.9168 12.6434L9.35902 10.081L11.9168 12.6434ZM10.7765 6.65655C10.7765 7.94192 10.2659 9.17464 9.35697 10.0835C8.44808 10.9924 7.21536 11.503 5.92999 11.503C4.64462 11.503 3.41189 10.9924 2.503 10.0835C1.59411 9.17464 1.0835 7.94192 1.0835 6.65655C1.0835 5.37118 1.59411 4.13846 2.503 3.22956C3.41189 2.32067 4.64462 1.81006 5.92999 1.81006C7.21536 1.81006 8.44808 2.32067 9.35697 3.22956C10.2659 4.13846 10.7765 5.37118 10.7765 6.65655V6.65655Z"
+                                                stroke="#D2D2D2" stroke-width="1.14035" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="manager__inner">
+                                <div class="manager__item manager-item">
+                                    <div class="manager-item__top">
+                                        <p class="manager-item__top-text">
+                                            #
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Ссылка
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Изображение
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Команда
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Username
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Дата
+                                        </p>
+                                        <p class="manager-item__top-text">
+                                            Статус
+                                        </p>
+                                    </div>
+                                    <ul class="manager-item__list manager-item-list">
+                                        <li class="manager-item-list__item manager-list-item">
+                                            <p class="manager-list-item__count">
+                                                01
+                                            </p>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__link" href="#">
+                                                    https://example.com
+                                                </a>
+                                            </div>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__img" data-fancybox=""
+                                                    href="images/img.jpg">
+                                                    <img class="manager-list-item-row__img-image" src="images/img.jpg"
+                                                        alt="img">
+                                                    <button class="manager-list-item-row__img-btn" type="button">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M11.9168 12.6434L9.35902 10.081L11.9168 12.6434ZM10.7765 6.65655C10.7765 7.94192 10.2659 9.17464 9.35697 10.0835C8.44808 10.9924 7.21536 11.503 5.92999 11.503C4.64462 11.503 3.41189 10.9924 2.503 10.0835C1.59411 9.17464 1.0835 7.94192 1.0835 6.65655C1.0835 5.37118 1.59411 4.13846 2.503 3.22956C3.41189 2.32067 4.64462 1.81006 5.92999 1.81006C7.21536 1.81006 8.44808 2.32067 9.35697 3.22956C10.2659 4.13846 10.7765 5.37118 10.7765 6.65655V6.65655Z"
+                                                                stroke="white" stroke-width="1.14035"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <p class="manager-list-item__text">
+                                                SmTeam
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                Username 1
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                24.05.2023
+                                            </p>
+                                            <div class="manager-list-item__box manager-list-item-box">
+                                                <div
+                                                    class="manager-list-item-box__status manager-list-item-box__status--yellow">
+                                                    В процессе
+                                                </div>
+                                                <div class="manager-list-item-box__doings manager-list-item-box-doings">
+                                                    <button class="manager-list-item-box-doings__btn" type="button">
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                    </button>
+                                                    <div class="manager-list-item-box-doings__window">
+                                                        <button class="manager-list-item-box-doings__window-btn manager-list-item-box-doings__window-btn--download"
+                                                            type="button">
+                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M13.5276 9.375V11.875C13.5276 12.2065 13.3919 12.5245 13.1503 12.7589C12.9087 12.9933 12.581 13.125 12.2393 13.125H3.22095C2.87926 13.125 2.55157 12.9933 2.30996 12.7589C2.06835 12.5245 1.93262 12.2065 1.93262 11.875V9.375"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M4.50928 6.25L7.73011 9.375L10.9509 6.25"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.72998 9.375V1.875" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Download
+                                                            </span>
+                                                        </button>
+                                                        <button class="manager-list-item-box-doings__window-btn"
+                                                            type="button">
+                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.875 3.75H13.125" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M11.875 3.75V12.5C11.875 13.125 11.25 13.75 10.625 13.75H4.375C3.75 13.75 3.125 13.125 3.125 12.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M5 3.75V2.5C5 1.875 5.625 1.25 6.25 1.25H8.75C9.375 1.25 10 1.875 10 2.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.25 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M8.75 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Delete
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="manager-item-list__item manager-list-item">
+                                            <p class="manager-list-item__count">
+                                                02
+                                            </p>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__link" href="#">
+                                                    https://example.com
+                                                </a>
+                                            </div>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__img" data-fancybox=""
+                                                    href="images/img.jpg">
+                                                    <img class="manager-list-item-row__img-image" src="images/img.jpg"
+                                                        alt="img">
+                                                    <button class="manager-list-item-row__img-btn" type="button">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M11.9168 12.6434L9.35902 10.081L11.9168 12.6434ZM10.7765 6.65655C10.7765 7.94192 10.2659 9.17464 9.35697 10.0835C8.44808 10.9924 7.21536 11.503 5.92999 11.503C4.64462 11.503 3.41189 10.9924 2.503 10.0835C1.59411 9.17464 1.0835 7.94192 1.0835 6.65655C1.0835 5.37118 1.59411 4.13846 2.503 3.22956C3.41189 2.32067 4.64462 1.81006 5.92999 1.81006C7.21536 1.81006 8.44808 2.32067 9.35697 3.22956C10.2659 4.13846 10.7765 5.37118 10.7765 6.65655V6.65655Z"
+                                                                stroke="white" stroke-width="1.14035"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <p class="manager-list-item__text">
+                                                SmTeam
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                Username 2
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                24.05.2023
+                                            </p>
+                                            <div class="manager-list-item__box manager-list-item-box">
+                                                <div
+                                                    class="manager-list-item-box__status manager-list-item-box__status--green">
+                                                    Готово
+                                                </div>
+                                                <div class="manager-list-item-box__doings manager-list-item-box-doings">
+                                                    <button class="manager-list-item-box-doings__btn" type="button">
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                    </button>
+                                                    <div class="manager-list-item-box-doings__window">
+                                                        <button class="manager-list-item-box-doings__window-btn manager-list-item-box-doings__window-btn--download"
+                                                            type="button">
+                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M13.5276 9.375V11.875C13.5276 12.2065 13.3919 12.5245 13.1503 12.7589C12.9087 12.9933 12.581 13.125 12.2393 13.125H3.22095C2.87926 13.125 2.55157 12.9933 2.30996 12.7589C2.06835 12.5245 1.93262 12.2065 1.93262 11.875V9.375"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M4.50928 6.25L7.73011 9.375L10.9509 6.25"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.72998 9.375V1.875" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Download
+                                                            </span>
+                                                        </button>
+                                                        <button class="manager-list-item-box-doings__window-btn"
+                                                            type="button">
+                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.875 3.75H13.125" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M11.875 3.75V12.5C11.875 13.125 11.25 13.75 10.625 13.75H4.375C3.75 13.75 3.125 13.125 3.125 12.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M5 3.75V2.5C5 1.875 5.625 1.25 6.25 1.25H8.75C9.375 1.25 10 1.875 10 2.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.25 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M8.75 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Delete
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="manager-item-list__item manager-list-item">
+                                            <p class="manager-list-item__count">
+                                                03
+                                            </p>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__link" href="#">
+                                                    https://example.com
+                                                </a>
+                                            </div>
+                                            <div class="manager-list-item__row manager-list-item-row">
+                                                <a class="manager-list-item-row__img" data-fancybox=""
+                                                    href="images/img.jpg">
+                                                    <img class="manager-list-item-row__img-image" src="images/img.jpg"
+                                                        alt="img">
+                                                    <button class="manager-list-item-row__img-btn" type="button">
+                                                        <svg width="13" height="14" viewBox="0 0 13 14" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M11.9168 12.6434L9.35902 10.081L11.9168 12.6434ZM10.7765 6.65655C10.7765 7.94192 10.2659 9.17464 9.35697 10.0835C8.44808 10.9924 7.21536 11.503 5.92999 11.503C4.64462 11.503 3.41189 10.9924 2.503 10.0835C1.59411 9.17464 1.0835 7.94192 1.0835 6.65655C1.0835 5.37118 1.59411 4.13846 2.503 3.22956C3.41189 2.32067 4.64462 1.81006 5.92999 1.81006C7.21536 1.81006 8.44808 2.32067 9.35697 3.22956C10.2659 4.13846 10.7765 5.37118 10.7765 6.65655V6.65655Z"
+                                                                stroke="white" stroke-width="1.14035"
+                                                                stroke-linecap="round" stroke-linejoin="round" />
+                                                        </svg>
+                                                    </button>
+                                                </a>
+                                            </div>
+                                            <p class="manager-list-item__text">
+                                                SmTeam
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                Username 3
+                                            </p>
+                                            <p class="manager-list-item__text">
+                                                24.05.2023
+                                            </p>
+                                            <div class="manager-list-item__box manager-list-item-box">
+                                                <div
+                                                    class="manager-list-item-box__status manager-list-item-box__status--red">
+                                                    Ошибка
+                                                    <div class="manager-list-item-box__status-error">
+                                                        Код ошибки:
+                                                        <span>
+                                                            something was wrong
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="manager-list-item-box__doings manager-list-item-box-doings">
+                                                    <button class="manager-list-item-box-doings__btn" type="button">
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                        <span>
+                                                        </span>
+                                                    </button>
+                                                    <div class="manager-list-item-box-doings__window">
+                                                        <button class="manager-list-item-box-doings__window-btn manager-list-item-box-doings__window-btn--download"
+                                                            type="button">
+                                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M13.5276 9.375V11.875C13.5276 12.2065 13.3919 12.5245 13.1503 12.7589C12.9087 12.9933 12.581 13.125 12.2393 13.125H3.22095C2.87926 13.125 2.55157 12.9933 2.30996 12.7589C2.06835 12.5245 1.93262 12.2065 1.93262 11.875V9.375"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M4.50928 6.25L7.73011 9.375L10.9509 6.25"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M7.72998 9.375V1.875" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Download
+                                                            </span>
+                                                        </button>
+                                                        <button class="manager-list-item-box-doings__window-btn"
+                                                            type="button">
+                                                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M1.875 3.75H13.125" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M11.875 3.75V12.5C11.875 13.125 11.25 13.75 10.625 13.75H4.375C3.75 13.75 3.125 13.125 3.125 12.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path
+                                                                    d="M5 3.75V2.5C5 1.875 5.625 1.25 6.25 1.25H8.75C9.375 1.25 10 1.875 10 2.5V3.75"
+                                                                    stroke="white" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M6.25 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                                <path d="M8.75 6.875V10.625" stroke="white"
+                                                                    stroke-width="1.5" stroke-linecap="round"
+                                                                    stroke-linejoin="round" />
+                                                            </svg>
+                                                            <span>
+                                                                Delete
+                                                            </span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="manager__pagination pagination">
+                                <ul class="pagination__list">
+                                    <li class="pagination__list-item">
+                                        <p class="pagination__list-text" href="#">
+                                            1
+                                        </p>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li class="pagination__list-item">
+                                        <a class="pagination__list-link" href="#">
+                                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.9999 0.995935C12.0004 1.12398 11.9721 1.25049 11.9172 1.36617C11.8624 1.48186 11.7823 1.58378 11.6828 1.66444L6.54046 5.80405C6.3871 5.93011 6.19474 5.99902 5.99622 5.99902C5.7977 5.99902 5.60534 5.93011 5.45199 5.80405L0.309616 1.51874C0.134589 1.37327 0.0245216 1.16422 0.00362666 0.93759C-0.0172683 0.71096 0.052721 0.485312 0.198197 0.310285C0.343674 0.135259 0.552721 0.0251918 0.779351 0.00429678C1.00598 -0.0165982 1.23163 0.0533905 1.40665 0.198867L6.00051 4.02993L10.5944 0.327427C10.7202 0.222623 10.8734 0.156049 11.0358 0.135582C11.1983 0.115116 11.3632 0.141614 11.5111 0.211941C11.6589 0.282268 11.7835 0.39348 11.8702 0.532419C11.9568 0.671357 12.0019 0.832207 11.9999 0.995935Z"
+                                                    fill="white" />
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="main__download download">
+                            <div class="download__inner">
+                                <div class="download__icon">
+                                    <svg width="76" height="75" viewBox="0 0 76 75" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_28_5484)">
+                                            <path
+                                                d="M57.8795 8.10059V65.3628H13.2223C11.9347 65.3628 10.8917 64.3184 10.8917 63.0308V20.1826L25.6779 5.76855H55.5475C56.8351 5.76855 57.8795 6.81299 57.8795 8.10059V8.10059Z"
+                                                fill="#EAF6FF" />
+                                            <path
+                                                d="M57.8795 43.1191V65.3628H35.6652V49.229C35.6652 45.854 38.4 43.1191 41.775 43.1191H57.8795Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M55.5481 5.76904H52.6482C53.9359 5.76904 54.9799 6.81289 54.9799 8.10063V65.3626H57.8799V8.10078C57.8797 6.81304 56.8359 5.76904 55.5481 5.76904V5.76904Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M53.0558 3.43066V60.6929H8.39856C7.11096 60.6929 6.06653 59.6484 6.06653 58.3608V13.3989L18.3873 1.09863H50.7238C52.0114 1.09863 53.0558 2.14307 53.0558 3.43066V3.43066Z"
+                                                fill="#EAF6FF" />
+                                            <path
+                                                d="M53.0558 43.1191V60.6929H35.6652V49.229C35.6652 45.854 38.4 43.1191 41.775 43.1191H53.0558Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M50.7238 1.09863H47.2379C48.5257 1.09863 49.5697 2.14248 49.5697 3.43022V60.6921H53.0555V3.43022C53.0554 2.14248 52.0115 1.09863 50.7238 1.09863V1.09863Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M63.8239 73.9014H45.2605C41.8864 73.9014 39.1511 71.1661 39.1511 67.7919V49.2286C39.1511 45.8544 41.8864 43.1191 45.2605 43.1191H63.8239C67.198 43.1191 69.9334 45.8544 69.9334 49.2286V67.7919C69.9334 71.1661 67.198 73.9014 63.8239 73.9014Z"
+                                                fill="#FE7624" />
+                                            <path
+                                                d="M63.824 43.119H60.3381C63.7123 43.119 66.4476 45.8543 66.4476 49.2284V67.7918C66.4476 71.1659 63.7123 73.9012 60.3381 73.9012H63.824C67.1981 73.9012 69.9334 71.1659 69.9334 67.7918V49.2286C69.9334 45.8543 67.1981 43.119 63.824 43.119V43.119Z"
+                                                fill="#EC6513" />
+                                            <path
+                                                d="M46.8487 60.7718L52.3615 67.6416C53.4806 69.0361 55.6032 69.0361 56.7222 67.6416L62.235 60.7718C63.6027 59.1574 62.3366 56.4908 60.211 56.5524H58.0731L58.0731 49.7275C58.0731 48.9569 57.4485 48.3322 56.6778 48.3322H52.4057C51.6352 48.3322 51.0105 48.9568 51.0105 49.7275V56.5524H48.8725C46.7475 56.4906 45.4807 59.1571 46.8487 60.7718V60.7718Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M46.8487 60.7718L52.3615 67.6416C53.4806 69.0361 55.6032 69.0361 56.7222 67.6416L62.235 60.7718C63.6027 59.1574 62.3366 56.4908 60.211 56.5524H58.0731L58.0731 49.7275C58.0731 48.9569 57.4485 48.3322 56.6778 48.3322H52.4057C51.6352 48.3322 51.0105 48.9568 51.0105 49.7275V56.5524H48.8725C46.7475 56.4906 45.4807 59.1571 46.8487 60.7718V60.7718Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M46.8487 60.7718L52.3615 67.6416C53.4806 69.0361 55.6032 69.0361 56.7222 67.6416L62.235 60.7718C63.6027 59.1574 62.3366 56.4908 60.211 56.5524H58.0731L58.0731 49.7275C58.0731 48.9569 57.4485 48.3322 56.6778 48.3322H52.4057C51.6352 48.3322 51.0105 48.9568 51.0105 49.7275V56.5524H48.8725C46.7475 56.4906 45.4807 59.1571 46.8487 60.7718V60.7718Z"
+                                                fill="#EAF6FF" />
+                                            <path
+                                                d="M47.0687 60.4397L52.5815 67.3096C53.7007 68.7041 55.8232 68.7041 56.9422 67.3096L57.2479 66.9287C56.4163 66.9475 55.578 66.6018 55.0038 65.8862L50.5545 60.4397C49.1863 58.8252 50.4532 56.1587 52.5784 56.2204H53.4719C54.1592 56.2204 54.7164 55.6632 54.7164 54.9759V49.3954C54.7164 48.6249 55.341 48.0002 56.1116 48.0002H52.6258C51.8552 48.0002 51.2305 48.6248 51.2305 49.3954V56.2204H49.0926C46.9675 56.1586 45.7007 58.8251 47.0687 60.4397V60.4397Z"
+                                                fill="#FFEADD" />
+                                            <path
+                                                d="M6.06738 13.3986L18.3879 1.09863V11.0669C18.3879 12.3546 17.3439 13.3986 16.0562 13.3986H6.06738Z"
+                                                fill="#C8EFFE" />
+                                            <path
+                                                d="M14.9014 4.57866V11.0669C14.9014 12.3546 13.8576 13.3985 12.5698 13.3985H16.0557C17.3435 13.3985 18.3873 12.3546 18.3873 11.0669V1.09863L14.9014 4.57866Z"
+                                                fill="#99E6FC" />
+                                            <path
+                                                d="M36.5349 12.3883H26.2183C24.8925 12.3883 23.8177 11.3135 23.8177 9.98772V9.98274C23.8177 8.65691 24.8925 7.58215 26.2183 7.58215H36.5349C37.8608 7.58215 38.9355 8.65691 38.9355 9.98274V9.98772C38.9355 11.3135 37.8608 12.3883 36.5349 12.3883Z"
+                                                fill="#99E6FC" />
+                                            <path
+                                                d="M36.535 7.58203H33.0491C34.3749 7.58203 35.4497 8.65679 35.4497 9.98262V9.9876C35.4497 11.3134 34.3749 12.3882 33.0491 12.3882H36.535C37.8608 12.3882 38.9355 11.3134 38.9355 9.9876V9.98262C38.9355 8.65693 37.8608 7.58203 36.535 7.58203V7.58203Z"
+                                                fill="#62DBFB" />
+                                            <path
+                                                d="M63.824 42.0204H54.1544V6.86719H55.5475C56.2276 6.86719 56.7809 7.42046 56.7809 8.10059V37.9942C56.7809 38.601 57.2728 39.0929 57.8795 39.0929C58.4863 39.0929 58.9781 38.601 58.9781 37.9942V8.10059C58.9781 6.20889 57.4392 4.66992 55.5475 4.66992H54.1544V3.43067C54.1544 1.53897 52.6155 2.32488e-06 50.7238 2.32488e-06H23.5248C22.9181 2.32488e-06 22.4262 0.491897 22.4262 1.09863C22.4262 1.70537 22.9181 2.19727 23.5248 2.19727H50.7238C51.4039 2.19727 51.9572 2.75054 51.9572 3.43067V42.0204H45.2606C41.2861 42.0204 38.0524 45.2539 38.0524 49.2286V59.5942H8.39856C7.71843 59.5942 7.16516 59.041 7.16516 58.3608V14.4973H16.0556C17.9471 14.4973 19.4858 12.9584 19.4858 11.067V1.09863C19.4858 0.654494 19.2183 0.254006 18.808 0.0837914C18.3979 -0.086277 17.9253 0.00732655 17.611 0.321096L5.2906 12.6211C5.16111 12.8162 5.01726 12.8266 4.9679 13.3989V58.3608C4.9679 60.2525 6.50686 61.7915 8.39856 61.7915H9.79309V63.0308C9.79309 64.9225 11.3315 66.4614 13.2223 66.4614H38.0524V67.7919C38.0524 71.7665 41.2859 75 45.2606 75H63.824C67.7986 75 71.0321 71.7665 71.0321 67.7919V49.2286C71.0321 45.254 67.7986 42.0204 63.824 42.0204V42.0204ZM17.2887 3.7478V11.0669C17.2887 11.7469 16.7356 12.2999 16.0557 12.2999H8.72214L17.2887 3.7478ZM13.2223 64.2642C12.543 64.2642 11.9904 63.7109 11.9904 63.0308V61.7915H38.0524V64.2642H13.2223ZM68.8348 67.7919C68.8348 70.5549 66.587 72.8027 63.824 72.8027H45.2606C42.4976 72.8027 40.2497 70.5549 40.2497 67.7919C40.2497 67.7919 40.2497 60.6882 40.2497 60.6858V49.2286C40.2497 46.4656 42.4975 44.2176 45.2606 44.2176H63.824C66.587 44.2176 68.8348 46.4654 68.8348 49.2286V67.7919Z"
+                                                fill="black" />
+                                            <path
+                                                d="M51.4948 68.0967C52.8911 69.9446 56.0364 70.0508 57.5694 68.0967L63.0738 61.2373C65.0424 59.0075 63.1639 55.1034 60.1869 55.2213H59.162L59.162 49.4949C59.162 48.1199 58.0433 47.0012 56.6681 47.0012L52.396 47.0012C51.021 47.0012 49.9023 48.1199 49.9023 49.4949V55.2213L48.8775 55.2213C45.9322 55.0552 44.0329 58.9799 45.9903 61.2371L51.4948 68.0967ZM47.5341 58.2705C47.5951 58.1114 48.0267 57.4307 48.8628 57.4184H51.0008C51.6075 57.4184 52.0994 56.9265 52.0994 56.3198V49.4948C52.0994 49.3313 52.2324 49.1983 52.3959 49.1983L56.6679 49.1983C56.8316 49.1983 56.9646 49.3313 56.9646 49.4948V56.3198C56.9646 56.9265 57.4565 57.4184 58.0632 57.4184L60.2011 57.4184C61.6036 57.5516 62.0265 58.7845 61.3683 59.8515L55.8555 66.7213C55.3153 67.3908 53.9974 67.6701 53.2086 66.7213L47.6958 59.8515C47.3838 59.4945 47.2777 58.8123 47.5341 58.2705V58.2705Z"
+                                                fill="black" />
+                                            <path
+                                                d="M36.5352 13.4869C38.4647 13.4869 40.0344 11.9172 40.0344 9.98274C40.0344 8.05325 38.4647 6.48352 36.5352 6.48352H26.2186C24.2891 6.48352 22.7194 8.05325 22.7194 9.98772C22.7194 11.9172 24.2891 13.4869 26.2186 13.4869H36.5352ZM24.9165 9.98259C24.9165 9.26467 25.5005 8.68064 26.2184 8.68064H36.5352C37.2531 8.68064 37.8371 9.26467 37.8371 9.98757C37.8371 10.7055 37.2531 11.2895 36.5352 11.2895H26.2186C25.5005 11.2897 24.9165 10.7055 24.9165 9.98259V9.98259Z"
+                                                fill="black" />
+                                            <path
+                                                d="M13.2642 21.6908C13.2642 22.2975 13.7561 22.7894 14.3628 22.7894H44.8072C45.414 22.7894 45.9059 22.2975 45.9059 21.6908C45.9059 21.0841 45.414 20.5922 44.8072 20.5922H14.3628C13.7561 20.5922 13.2642 21.0841 13.2642 21.6908Z"
+                                                fill="black" />
+                                            <path
+                                                d="M44.8072 27.1068H14.3628C13.7561 27.1068 13.2642 27.5987 13.2642 28.2054C13.2642 28.8122 13.7561 29.3041 14.3628 29.3041H44.8072C45.414 29.3041 45.9059 28.8122 45.9059 28.2054C45.9059 27.5987 45.414 27.1068 44.8072 27.1068Z"
+                                                fill="black" />
+                                            <path
+                                                d="M44.8073 33.6212H39.1221C38.5153 33.6212 38.0234 34.1131 38.0234 34.7198C38.0234 35.3266 38.5153 35.8185 39.1221 35.8185H44.8073C45.414 35.8185 45.9059 35.3266 45.9059 34.7198C45.9059 34.1131 45.414 33.6212 44.8073 33.6212Z"
+                                                fill="black" />
+                                            <path
+                                                d="M35.0637 34.7198C35.0637 34.1131 34.5718 33.6212 33.965 33.6212H14.3628C13.7561 33.6212 13.2642 34.1131 13.2642 34.7198C13.2642 35.3266 13.7561 35.8185 14.3628 35.8185H33.965C34.5718 35.8185 35.0637 35.3266 35.0637 34.7198Z"
+                                                fill="black" />
+                                            <path
+                                                d="M27.6379 40.1359H14.3628C13.7561 40.1359 13.2642 40.6278 13.2642 41.2345C13.2642 41.8412 13.7561 42.3331 14.3628 42.3331H27.6379C28.2447 42.3331 28.7366 41.8412 28.7366 41.2345C28.7366 40.6278 28.2447 40.1359 27.6379 40.1359Z"
+                                                fill="black" />
+                                            <path
+                                                d="M27.6379 46.6503H14.3628C13.7561 46.6503 13.2642 47.1422 13.2642 47.7489C13.2642 48.3556 13.7561 48.8475 14.3628 48.8475H27.6379C28.2447 48.8475 28.7366 48.3556 28.7366 47.7489C28.7366 47.1422 28.2447 46.6503 27.6379 46.6503Z"
+                                                fill="black" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_28_5484">
+                                                <rect width="75" height="75" fill="white" transform="translate(0.5)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h2 class="download__title">
+                                    Скачать
+                                </h2>
+                                <p class="download__text">
+                                    Загрузите сайт с нужными вам элементами
+                                </p>
+                                <a class="download__link btn" href="#">
+                                    Скачать
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__inner">
+                        <a class="footer__logout logout" href="#">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.2 4.10077V2.85949C8.19999 2.67145 8.16555 2.48545 8.09886 2.31325C8.03217 2.14106 7.93467 1.98641 7.81253 1.85908C7.69039 1.73175 7.54627 1.63452 7.38927 1.57352C7.23227 1.51252 7.0658 1.48908 6.9004 1.50469L2.1004 1.95742C1.80043 1.98573 1.52081 2.14073 1.31698 2.39167C1.11315 2.64262 1.00001 2.97119 1 3.31222V11.6871C1.00001 12.0281 1.11315 12.3567 1.31698 12.6076C1.52081 12.8586 1.80043 13.0136 2.1004 13.0419L6.9004 13.4953C7.06585 13.5109 7.23237 13.4875 7.38941 13.4264C7.54645 13.3654 7.6906 13.2681 7.81275 13.1407C7.9349 13.0133 8.03238 12.8586 8.09904 12.6863C8.1657 12.514 8.20008 12.3279 8.2 12.1398V10.8986M7.6 7.49966H13H7.6ZM13 7.49966L11.0002 4.78055L13 7.49966ZM13 7.49966L11.0002 10.2188L13 7.49966Z"
+                                    stroke="#87888C" stroke-width="1.2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <span>
+                                Logout
+                            </span>
+                        </a>
+                        <p class="footer__text">
+                            Copyright text is very and very long - copyright text is very and very long - copyright text
+                            is very and
+                            very long - copyright text is very and very long
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="download-popup">
+                <form class="download-popup__form download-popup-form" action="#">
+                    <button class="download-popup-form__close" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <h2 class="download-popup-form__title">
+                        Скачать
+                    </h2>
+                    <p class="download-popup-form__text">
+                        Скачайте нужный вам сайт указав обязательные параметры
+                    </p>
+                    <div class="download-popup-form__box">
+                        <label class="download-popup-form__box-text" for="">
+                            Ваша ссылка на сайт:
+                        </label>
+                        <input class="download-popup-form__box-input" type="text" placeholder="https://example.com">
+                    </div>
+                    <div class="download-popup-form__row">
+                        <div class="download-popup-form__row-select custom-select">
+                            <select>
+                                <option value="0">Standart</option>
+                                <option value="1">Standart</option>
+                                <option value="2">Selenium</option>
+                            </select>
+                        </div>
+                        <div class="download-popup-form__row-select custom-select">
+                            <select>
+                                <option value="0">Скачать страницу</option>
+                                <option value="1">Скачать страницу</option>
+                                <option value="2">Скачать весь сайт</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="download-popup-form__checkbox checkbox">
+                        <label class="container">
+                            Вставить куки
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="download-popup-form__cookies download-popup-form-cookies">
+                        <textarea class="download-popup-form-cookies__textarea" name="" id="" cols="30" rows="10"
+                            placeholder="Вставьте ваши куки сюда"></textarea>
+                        <p class="download-popup-form-cookies__text">
+                            <span>
+
+                            </span>
+                            Или
+                            <span>
+
+                            </span>
+                        </p>
+                        <p class="download-popup-form-cookies__subtext">
+                            Перетяните ваш файл
+                        </p>
+                        <div class="download-popup-form-cookies__box">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.05703 6V3.33333C2.05703 2.97971 2.20152 2.64057 2.45871 2.39052C2.71591 2.14048 3.06473 2 3.42846 2L13.0285 2C13.3922 2 13.741 2.14048 13.9982 2.39052C14.2554 2.64057 14.3999 2.97971 14.3999 3.33333V6"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M11.657 9.33325L8.22846 5.99992L4.79988 9.33325" stroke="white"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.22846 6L8.22846 14" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <input class="download-popup-form-cookies__box-input" type="file">
+                        </div>
+                    </div>
+                    <button class="download-popup-form__button btn" type="submit">
+                        Скачать
+                    </button>
+                </form>
+            </div>
+            <div class="error-popup">
+                <div class="error-popup__inner">
+                    <button class="error-popup__close" type="button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 7L17 17M7 17L17 7" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <h2 class="error-popup__title">
+                        Ошибка
+                    </h2>
+                    <div class="error-popup__box">
+                        <p class="error-popup__text">
+                            При загурзке сайта  
+                            <a href="#">
+                                #03
+                            </a>
+                            произошла ошибка
+                        </p>
+                        <p class="error-popup__text">
+                            Код ошибки:
+                            <span>
+                                something was wrong
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
